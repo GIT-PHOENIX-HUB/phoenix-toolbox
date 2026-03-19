@@ -1,0 +1,9 @@
+{
+  "name": "echo-persistence",
+  "description": "Infrastructure for the Echo persistent identity system - session logging, state preservation, and context survival across compactions",
+  "version": "1.0.0",
+  "author": {
+    "name": "Shane Warehime"
+  },
+  "keywords": ["persistence", "identity", "logging", "echo", "phoenix"]
+}

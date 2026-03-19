@@ -1,0 +1,9 @@
+{
+  "name": "file-steward",
+  "description": "Phoenix Echo's file management system - organization, triage, research library, and filing convention enforcement",
+  "version": "1.0.0",
+  "author": {
+    "name": "Shane Warehime"
+  },
+  "keywords": ["files", "organization", "filing-convention", "research-library", "triage", "stewardship"]
+}

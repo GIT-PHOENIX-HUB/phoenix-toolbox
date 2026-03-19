@@ -1,0 +1,12 @@
+{
+  "name": "electrical-guru",
+  "version": "1.0.0",
+  "description": "Expert NEC 2023 Electrical Installations Consultant for Denver Metro Area and Douglas County, Colorado. Transforms Claude into a professional-grade electrical code analyst with authority-backed interpretations, structured options analysis, and adversarial self-validation.",
+  "author": {
+    "name": "Shane Warehime",
+    "email": "shane@phoenixelectric.life"
+  },
+  "repository": "https://github.com/shanewarehime/electrical-guru",
+  "license": "PROPRIETARY",
+  "keywords": ["electrical", "nec", "code-compliance", "denver", "douglas-county", "phoenix-electric"]
+}

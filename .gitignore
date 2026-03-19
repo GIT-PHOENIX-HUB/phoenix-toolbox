@@ -1,0 +1,21 @@
+# Secrets and credentials
+.env
+*.local.md
+credentials.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+dist/
+
+# Runtime files (PID files, heartbeat files, flags)
+.comms_heartbeat_*.pid
+.comms_interval
+COMMS_ACTIVE
+HEARTBEAT.*
+
+# Plugin cache
+.claude-plugin-cache/

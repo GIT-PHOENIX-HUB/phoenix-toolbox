@@ -1,0 +1,10 @@
+{
+  "name": "rexel",
+  "description": "Rexel electrical distributor integration for Phoenix Electric — purchase history lookup, margin analysis, pricebook gap analysis, and spend tracking across 1,600+ SKUs and $1M+ in historical invoices.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Shane Warehime",
+    "email": "shane@phoenixelectric.life"
+  },
+  "keywords": ["rexel", "phoenix-electric", "pricebook", "vendor", "margin", "electrical", "materials"]
+}

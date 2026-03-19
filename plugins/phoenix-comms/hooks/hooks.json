@@ -1,0 +1,14 @@
+{
+  "SessionStart": [
+    {
+      "matcher": "",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "bash -c 'GATEWAY=\"$HOME/Phoenix_Local/_GATEWAY\"; if [ -f \"$GATEWAY/COMMS_ACTIVE\" ]; then echo \"=== PHOENIX COMMS: AUTO-START ===\"; echo; if [ -f \"$GATEWAY/HEARTBEAT.codex\" ]; then echo \"Codex heartbeat:\"; cat \"$GATEWAY/HEARTBEAT.codex\"; else echo \"No Codex heartbeat file.\"; fi; echo; LEDGER=\"$GATEWAY/LEDGER.md\"; if [ -f \"$LEDGER\" ]; then codex_lines=$(tail -50 \"$LEDGER\" | grep -i \"| Codex\" || true); if [ -n \"$codex_lines\" ]; then echo \"Recent Codex LEDGER actions:\"; echo \"$codex_lines\" | sed \"s/.*| \\([A-Z_]*\\) |.*/  - \\1/\" | head -10; else echo \"No recent Codex LEDGER entries.\"; fi; fi; echo; echo \"═══════════════════════════════════════\"; echo \"  DO NOT ACT ON THESE. STAY ON YOUR TASK.\"; echo \"═══════════════════════════════════════\"; echo; INTERVAL=$(cat \"$GATEWAY/phoenix-comms/.comms_interval\" 2>/dev/null || echo 900); PID_FILE=\"$GATEWAY/phoenix-comms/.comms_heartbeat_echo.pid\"; if [ -f \"$PID_FILE\" ] && kill -0 $(cat \"$PID_FILE\") 2>/dev/null; then echo \"Heartbeat already running (PID: $(cat \"$PID_FILE\"))\"; else PHOENIX_COMMS_AGENT=echo PHOENIX_COMMS_INTERVAL=$INTERVAL PHOENIX_COMMS_TASK=\"session starting\" nohup bash \"$GATEWAY/phoenix-comms/scripts/heartbeat.sh\" > /dev/null 2>&1 & echo \"Heartbeat started (PID: $!, interval: ${INTERVAL}s)\"; fi; else echo \"Phoenix Comms: inactive (no COMMS_ACTIVE flag)\"; fi'",
+          "timeout": 10
+        }
+      ]
+    }
+  ]
+}

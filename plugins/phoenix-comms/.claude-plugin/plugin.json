@@ -1,0 +1,9 @@
+{
+  "name": "phoenix-comms",
+  "version": "1.0.0",
+  "description": "Cross-agent communication via shared LEDGER heartbeats. Enables Echo and Codex to see each other's presence and recent activity without derailing from their own tasks.",
+  "author": {
+    "name": "Phoenix Echo",
+    "email": "shane@phoenixelectric.life"
+  }
+}

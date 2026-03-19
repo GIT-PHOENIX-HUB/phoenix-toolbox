@@ -1,0 +1,14 @@
+{
+  "rexel": {
+    "command": "node",
+    "args": ["/Users/shanewarehime/GitHub/phoenix-ai-core-staging/packages/rexel-mcp-server/dist/index.js"],
+    "env": {
+      "REXEL_DATA_PATH": "/Users/shanewarehime/GitHub/phoenix-ai-core-staging/packages/rexel-mcp-server/dist/data/rexel-skus.json",
+      "PRICEBOOK_DATA_PATH": "/Users/shanewarehime/GitHub/phoenix-ai-core-staging/packages/pricebook-mcp-server/dist/data/all-tiers.json"
+    }
+  },
+  "pricebook": {
+    "command": "node",
+    "args": ["/Users/shanewarehime/GitHub/phoenix-ai-core-staging/packages/pricebook-mcp-server/dist/index.js"]
+  }
+}

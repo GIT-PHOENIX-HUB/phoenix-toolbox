@@ -1,0 +1,19 @@
+{
+  "name": "phoenix-knowledge",
+  "description": "Phoenix Electric knowledge base — complete build reference extracted from twin-peaks runbooks, playbooks, research bible, and Shane's decisions. Portable for Claude, Llama, and local AI Gateway.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Shane Warehime",
+    "email": "shane@phoenixelectric.life"
+  },
+  "keywords": ["phoenix-electric", "knowledge-base", "twin-peaks", "service-fusion", "gateway", "ollama", "mcp"],
+  "skills": [
+    "skills/phoenix-lookup.md"
+  ],
+  "agents": [
+    "agents/knowledge-agent.md"
+  ],
+  "commands": [
+    "commands/kb.md"
+  ]
+}
