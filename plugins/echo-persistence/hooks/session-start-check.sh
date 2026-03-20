@@ -43,6 +43,17 @@ fi
 echo "ECHO.md last updated: ${ECHO_MOD:-unknown}"
 echo "Recent LEDGER:"
 echo "$RECENT"
+
+# Show P0/P1 open tasks from MASTER_TODO
+TODO_FILE="${GATEWAY}/MASTER_TODO.md"
+if [ -f "$TODO_FILE" ]; then
+    echo ""
+    echo "=== MASTER_TODO: Open P0/P1 Tasks ==="
+    # Extract task headers with their status and priority (3 lines after header)
+    awk '/^### T-[0-9]+:/{title=$0; s=""; p=""; getline; if(/Status:/){s=$0}; getline; if(/Owner:/){getline}; if(/Priority:/){p=$0}; if((p ~ /P0/ || p ~ /P1/) && s !~ /DONE/ && s !~ /COMPLETE/){print title; print s; print p; print ""}}' "$TODO_FILE" 2>/dev/null | head -60 || true
+    echo "=== END MASTER_TODO ==="
+fi
+
 echo "---"
 echo "Commands: /echo (identity) | /status (quick look) | /health (full check) | /log (entry) | /wrapup (end session) | /scout (find plugins)"
 
