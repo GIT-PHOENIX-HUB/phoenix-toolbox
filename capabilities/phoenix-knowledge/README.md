@@ -4,7 +4,7 @@
 
 ## What It Does
 
-Phoenix Knowledge is a self-contained knowledge base covering Phoenix Electric's operations, procedures, and reference material. It spans 8 project phases with 13 knowledge files, 4 reference documents, and 1 decisions document. The lookup skill and knowledge agent provide structured access for answering operational questions without external API calls.
+Phoenix Knowledge is a self-contained knowledge base covering Phoenix Electric's operations, procedures, and reference material. It contains 13 knowledge files total: 8 phase documents, 4 reference documents, and 1 decisions document. The lookup skill and knowledge agent provide structured access for answering operational questions without external API calls.
 
 ## Components
 
@@ -14,9 +14,7 @@ Phoenix Knowledge is a self-contained knowledge base covering Phoenix Electric's
 | Skills | 1 | phoenix-lookup |
 | Agents | 1 | knowledge-agent |
 | Hooks | 0 | -- |
-| Knowledge Files | 13 | Across 8 phases |
-| Reference Docs | 4 | -- |
-| Decisions Doc | 1 | -- |
+| Knowledge Files | 13 | 8 phase docs + 4 reference docs + 1 decisions doc |
 
 ## Commands
 

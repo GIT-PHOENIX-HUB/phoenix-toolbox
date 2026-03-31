@@ -26,7 +26,21 @@ A standalone web application that spawns and supervises 4 AI agent CLI sessions 
 
 ## Installation
 
-Symlink or copy this folder to `~/.claude/plugins/gauntlet/`
+This is a standalone web app, not a Claude plugin.
+
+```bash
+# Server
+cd capabilities/gauntlet/server && npm install
+
+# Client
+cd capabilities/gauntlet/client && npm install
+
+# Or use the control script
+./capabilities/gauntlet/scripts/gauntlet_control.sh install
+./capabilities/gauntlet/scripts/gauntlet_control.sh start
+```
+
+For persistent operation, install the macOS LaunchAgent from `configs/com.phoenix.gauntlet.plist`.
 
 ## Dependencies
 

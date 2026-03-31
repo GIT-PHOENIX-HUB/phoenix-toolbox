@@ -1,5 +1,9 @@
-# Phoenix Plugins — Hub Structure
-**Status:** D1 Hub Structure ACTIVE
+# Phoenix Plugins — Hub Structure (ARCHIVED)
+
+> **ARCHIVED — 2026-03-31.** This document reflects the pre-Phase-1 structure (`plugins/`, `skills/`, `mcps/`).
+> The repo has been restructured to capability-first architecture. See `CAPABILITY_REGISTRY.md` for current state.
+
+**Status:** ARCHIVED (was D1 Hub Structure ACTIVE)
 **Created:** 2026-03-28 by Phoenix Echo (Sonnet 4.6)
 **Purpose:** Capability hub. Receives extractions from other repos. Source of truth for all plugins, skills, and MCP servers.
 

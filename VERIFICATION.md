@@ -1,4 +1,8 @@
-# VERIFICATION — Wave B D1 Hub Pass
+# VERIFICATION — Wave B D1 Hub Pass (ARCHIVED)
+
+> **ARCHIVED — 2026-03-31.** This document reflects the pre-Phase-1 verification of the old `phoenix-plugins` structure.
+> The repo has been restructured. See `CAPABILITY_REGISTRY.md` for current state.
+
 **Date:** 2026-03-28
 **Agent:** Phoenix Echo (Sonnet 4.6)
 **Scope:** phoenix-plugins repo — local only, no push

@@ -22,7 +22,12 @@
 | Volt Marketing | `capabilities/volt-marketing/` | 1 | 1 | 0 | 0 | Active |
 | Gauntlet | `capabilities/gauntlet/` | 0 | 0 | 0 | 0 | Active — Standalone App |
 
-**Totals:** 9 capabilities, 28 commands, 6 skills, 9 agents, 6 hooks
+**Totals:** 9 capabilities, 28 commands, 6 skills, 9 agents, 6 hook definitions
+
+> **Hook counting standard:** Hooks = number of event handler definitions that fire at runtime.
+> Empty `hooks.json` config files (Rexel, ServiceFusion) count as 0.
+> Phoenix Comms counts 1 echo-side SessionStart + 2 codex-side scripts = 3.
+> Standalone apps (Gauntlet) do not require `.claude-plugin/plugin.json`.
 
 ---
 
@@ -60,4 +65,5 @@
 - Each capability is self-contained under `capabilities/<name>/`
 - Each capability has its own `README.md` with installation and usage docs
 - MCP servers live under `mcp-servers/` as deployable units
-- To install a capability: symlink or copy its folder to `~/.claude/plugins/<name>/`
+- To install a plugin capability: symlink or copy its folder to `~/.claude/plugins/<name>/`
+- Standalone apps (e.g., Gauntlet) have their own install instructions in their README
