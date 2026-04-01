@@ -3,7 +3,7 @@
 > Master index of all capabilities, MCP servers, and tools in this repository.
 > Single source of truth for what's available and where to find it.
 
-**Last updated:** 2026-03-31
+**Last updated:** 2026-03-31 (Phase 2)
 **Maintainer:** Phoenix Echo
 
 ---
@@ -21,8 +21,9 @@
 | Service Fusion | `capabilities/servicefusion/` | 6 | 1 | 1 | 0 | Active |
 | Volt Marketing | `capabilities/volt-marketing/` | 1 | 1 | 0 | 0 | Active |
 | Gauntlet | `capabilities/gauntlet/` | 0 | 0 | 0 | 0 | Active — Standalone App |
+| Phoenix 365 | `capabilities/phoenix-365/` | 4 | 3 | 2 | 1 | Active |
 
-**Totals:** 9 capabilities, 28 commands, 6 skills, 9 agents, 6 hook definitions
+**Totals:** 10 capabilities, 32 commands, 9 skills, 11 agents, 7 hook definitions
 
 > **Hook counting standard:** Hooks = number of event handler definitions that fire at runtime.
 > Empty `hooks.json` config files (Rexel, ServiceFusion) count as 0.
@@ -42,10 +43,10 @@
 | GBP MCP | `mcp-servers/marketing-mcp/mcp-gbp/` | 5+ | — | Research Complete (spec only) |
 | Google Ads MCP | `mcp-servers/marketing-mcp/mcp-google-ads/` | — | — | Placeholder |
 | Nextdoor Adapter | `mcp-servers/marketing-mcp/nextdoor-adapter/` | — | — | Placeholder |
-| Weather Trigger | `mcp-servers/marketing-mcp/weather-trigger/` | — | — | Placeholder |
+| Weather Trigger | `mcp-servers/marketing-mcp/weather-trigger/` | — | — | Research Complete (spec extracted) |
 | Volt Marketing MCP | `capabilities/volt-marketing/mcp-server/` | 8 | stdio | Active — In capability dir |
 
-**Totals:** 9 MCP server entries (3 active, 2 spec'd, 1 proposal, 3 placeholders)
+**Totals:** 9 MCP server entries (3 active, 3 spec'd, 1 proposal, 2 placeholders)
 
 ---
 

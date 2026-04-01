@@ -31,4 +31,22 @@
 [2026-03-31 16:31] ECHO :: PUSH :: Pushed to origin/main
 [2026-03-31 16:32] ADVERSARIAL :: REVIEW :: 15 findings (4 BLOCK_NOW, 8 FIX_THIS_PASS, 3 NOTE_FOR_LATER)
 [2026-03-31 16:33] ECHO :: FIX_BLOCKERS :: Standardized hook counting in registry, backfilled session log, fixing FIX_THIS_PASS items
+[2026-03-31 16:34] ECHO :: FIX_COMMIT :: 3826694 — toolbox: phase-1: fix adversarial review findings (12 of 15)
+[2026-03-31 16:34] ECHO :: PUSH :: Pushed fixes to origin/main
+[2026-03-31 16:35] ECHO :: GATE_CHECK :: Phase 1 completion gate — all 6 checks PASS
+[2026-03-31 16:35] ECHO :: PHASE_COMPLETE :: Phase 1 complete. 3 NOTE_FOR_LATER items deferred to Phase 4.
+
+---
+
+## Phase 2 — Extract from Archived Repos
+
+[2026-03-31 16:40] ECHO :: RESEARCH :: Dispatched 4 parallel research agents to inventory archived repos
+[2026-03-31 16:43] ECHO :: RESEARCH_COMPLETE :: phoenix-gauntlet (30 new files), phoenix-marketing (25 new), phoenix-365 (25 new), service-fusion (0 divergence, 2 governance docs)
+[2026-03-31 16:44] BUILDER :: EXTRACT_GAUNTLET :: 26 files extracted — docs/ARCHITECTURE.md, repeatable-swarm-kit (20 files), root package.json, .env.example, governance docs
+[2026-03-31 16:44] BUILDER :: EXTRACT_MARKETING :: 18 files extracted — runbook (2), storm profiles (5), weather spec (1), GBP templates (6), governance (4). Hardcoded paths sanitized.
+[2026-03-31 16:44] BUILDER :: EXTRACT_365 :: 20 files extracted — CRITICAL shared/ package (5), full Claude plugin (11), credential map + Stephanie spec (2), workspace configs (2). Hardcoded paths sanitized.
+[2026-03-31 16:45] ECHO :: EXTRACT_SF :: 2 governance docs (PRODUCT_BIBLE.md, BUILD_DOC.md). Zero divergence confirmed.
+[2026-03-31 16:45] ECHO :: NEW_CAPABILITY :: Created capabilities/phoenix-365/ with README — 10th capability (4 cmds, 3 skills, 2 agents, 1 hook)
+[2026-03-31 16:45] ECHO :: REGISTRY_UPDATE :: Updated CAPABILITY_REGISTRY.md — 10 capabilities, 32 commands, 9 skills, 11 agents, 7 hooks
+[2026-03-31 16:46] ECHO :: VERIFY :: All file counts confirmed across all 4 extractions
 
