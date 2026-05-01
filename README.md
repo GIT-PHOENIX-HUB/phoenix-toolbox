@@ -16,7 +16,7 @@ This repo follows a **capability-first architecture**: every functional unit liv
 
 ## Capability Inventory
 
-11 capabilities. 32 commands. 13 skills. 11 agents. 7 hook definitions.
+12 capabilities. 32 commands. 14 skills. 11 agents. 7 hook definitions.
 
 | Capability | Path | Commands | Skills | Agents | Hooks | Status |
 |---|---|---|---|---|---|---|
@@ -29,6 +29,7 @@ This repo follows a **capability-first architecture**: every functional unit liv
 | **Electrical Guru** | `capabilities/electrical-guru/` | 1 | 1 | 0 | 0 | Active |
 | **Phoenix Knowledge** | `capabilities/phoenix-knowledge/` | 1 | 1 | 1 | 0 | Active |
 | **Volt Marketing** | `capabilities/volt-marketing/` | 1 | 1 | 0 | 0 | Active |
+| **Firecrawl** | `capabilities/firecrawl/` | — | 1 | — | — | Active — Doc-based |
 | **Gauntlet** | `capabilities/gauntlet/` | — | — | — | — | Active — Standalone App |
 | **Browser Persistence** | `capabilities/browser-persistence/` | — | 4 | — | — | Active — Doc-based |
 
@@ -69,6 +70,7 @@ phoenix-toolbox/
 │   ├── volt-marketing/        # Marketing strategist + MCP server
 │   ├── gauntlet/              # Multi-agent terminal dashboard (standalone)
 │   ├── phoenix-365/           # Microsoft 365 integration
+│   ├── firecrawl/             # Web research / scraping playbook (doc-based)
 │   └── browser-persistence/   # Browser session persistence (doc-based)
 ├── mcp-servers/               # Shared MCP servers
 │   ├── builder-mcp/           # Multi-module Azure Functions platform
