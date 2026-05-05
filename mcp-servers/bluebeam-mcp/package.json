@@ -1,0 +1,38 @@
+{
+    "name": "bluebeam-mcp",
+    "version": "1.0.0",
+    "description": "Bluebeam Studio + Web automation for the Phoenix AI platform — drives Bluebeam Revu Core via the user's signed-in browser session (no API keys, no developer-portal approval). Capability-first MCP server in the Phoenix Toolbox house style.",
+    "type": "module",
+    "main": "dist/index.js",
+    "scripts": {
+          "build": "tsc",
+          "start": "node dist/index.js",
+          "dev": "tsc --watch & node --watch dist/index.js",
+          "clean": "rm -rf dist",
+          "login": "node dist/login.js",
+          "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+          "@modelcontextprotocol/sdk": "^1.0.0",
+          "playwright": "^1.47.0"
+    },
+    "devDependencies": {
+          "@types/node": "^20.0.0",
+          "typescript": "^5.0.0"
+    },
+    "engines": {
+          "node": ">=18.0.0"
+    },
+    "keywords": [
+          "mcp",
+          "phoenix-toolbox",
+          "bluebeam",
+          "revu",
+          "studio",
+          "construction",
+          "pdf"
+    ],
+    "author": "Shane Warehime — Phoenix Electric LLC",
+    "license": "UNLICENSED",
+    "private": true
+}
