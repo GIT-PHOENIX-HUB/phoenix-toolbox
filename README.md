@@ -16,7 +16,7 @@ This repo follows a **capability-first architecture**: every functional unit liv
 
 ## Capability Inventory
 
-12 capabilities. 32 commands. 14 skills. 11 agents. 7 hook definitions.
+13 capabilities. 33 commands. 15 skills. 11 agents. 7 hook definitions.
 
 | Capability | Path | Commands | Skills | Agents | Hooks | Status |
 |---|---|---|---|---|---|---|
